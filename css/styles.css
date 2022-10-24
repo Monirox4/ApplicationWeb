@@ -25,3 +25,6 @@ h1 {
     transition: all 250ms;
     overflow: hidden;
    }
+   .active {
+    background-color: rgba(0, 17, 255, 0.178);
+  }

@@ -10,9 +10,9 @@ function activateItem(e){
     if(e.target.nodeName == "LI"){
         ourHeadLine.innerHTML = e.target.innerHTML;
         for(i=0;i<e.target.parentNode.children.length;i++){
-            e.target.parentNode.children.remove("active");     
+            e.target.parentNode.children[i].classList.remove("active");     
         }
-        e.target.add("active");
+        e.target.classList.add("active");
     }
 }
 ourButton.addEventListener("click",createNewItem);
